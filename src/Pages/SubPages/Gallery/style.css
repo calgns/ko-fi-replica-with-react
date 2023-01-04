@@ -1,0 +1,14 @@
+.album-item{
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), 
+  url('https://storage.ko-fi.com/cdn/useruploads/post/5e510106-5c58-4bbc-b5cb-684293bcb683_mikedicksquotecopy.png');
+  /* background-image: url('https://storage.ko-fi.com/cdn/useruploads/post/5e510106-5c58-4bbc-b5cb-684293bcb683_mikedicksquotecopy.png'); */
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+}
+
+#share{
+  --bg-color: #392f46;
+  background-color: var(--bg-color);
+}
+
