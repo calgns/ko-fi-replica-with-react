@@ -2,12 +2,12 @@ import React from 'react';
 import './Global.css';
 import ReactDOM from 'react-dom';
 import { Blog } from './Pages/Blog';
-import { About } from './Pages/About';
+import { About } from './Pages/SubPages/About';
 import { NotFound } from './Pages/Notfound';
-import { AllPosts } from './Pages/AllPosts';
-import { Gallery } from './Pages/Gallery';
+import { AllPosts } from './Pages/SubPages/AllPosts';
+import { Gallery } from './Pages/SubPages/Gallery';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { Shop } from './Pages/Shop';
+import { Shop } from './Pages/SubPages/Shop';
 
 ReactDOM.render(
   <React.StrictMode>
