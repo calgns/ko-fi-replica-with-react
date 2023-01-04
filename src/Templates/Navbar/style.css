@@ -1,0 +1,119 @@
+img{max-width: 100%;}
+
+/* #nav{background-color: #1e1926;} */
+#nav{background-color: #1e1926da; backdrop-filter: blur(5px);}
+
+.nav-btn{
+  background-color: #3d0000;
+  color: #ff5c5c;
+  border: solid #6b0000 1px;}
+
+.btn-mobile{
+  font-size: 3rem;
+  color: bisque;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+.mob-btn{display: none;}
+.extra{display: none;}
+
+.menu{color: #fff;}
+
+.logo{filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;}
+
+@media (max-width: 740px) {
+  /* NAVBAR */
+  .extra{display: block;}
+  .nav-btn{display:none;}
+  .mob-btn{
+    display: block;
+    background-color: #3d0000;
+    border: solid #6b0000 1px;
+    color: #ff5c5c;
+  }
+
+  /* MENU-MOBILE */
+  
+  #nav div ul{
+    display: flex;
+    background-color: #1d075f;
+    flex-direction: column;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    height: 0px;
+    top: 65px;
+    left: 0;
+    z-index: 1000;
+    transition: .3s;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  
+  #nav.active ul{
+    visibility: visible;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 180px;
+  }
+  
+  #nav ul li{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    line-height:30px;
+    
+  }
+
+  /* NAV-MOB-TEXT */
+
+  #nav ul li:hover {
+    background-color: #150446;
+  }
+  
+  #nav ul li a{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  a:hover, a:active{
+    color: antiquewhite;
+    text-decoration: underline;
+  }
+
+  /* HAMBURGER */
+
+  .btn-mobile{
+    display: flex;
+  }
+
+  span.hamburger{
+    border-top: 4px solid;
+    width: 2rem;
+  }
+
+  .hamburger::after, .hamburger::before{
+    content: '';
+    display: block;
+    border-top: 4px solid;
+    width: 2rem;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #fff;
+    transition: .2s;
+    position: relative;
+  }
+
+  #nav.active .hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active .hamburger::before {rotate: 135deg;}
+  #nav.active .hamburger::after {rotate: -135deg; top: -9px;}
+
+}
+
+@media (max-width: 300px) {.mob-btn{display: none;}}
