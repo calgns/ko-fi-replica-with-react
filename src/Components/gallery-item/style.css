@@ -1,0 +1,17 @@
+
+.gallery-item{
+  /* background-color: rgb(63, 59, 59); */
+  min-width: 200px;
+  /* max-width: 300px; */
+  height: 150px;
+}
+
+/* #gli{max-width: 300px;} */
+
+@media (max-width: 540px) {
+  .gallery-item, #gli{
+    /* min-width: 150px; */
+    /* min-height: 132px; */
+  }
+  
+}
