@@ -4,6 +4,14 @@ ul.grid{grid-template-columns: repeat(auto-fit, minmax(250px, 301px));  width: a
 ul.grid > #gli:first-child{grid-row: 1 / 3;}
 ul.grid > #gli:first-child .gallery-item{max-width: auto; min-height: 300px;}
 
+.gallery-item{
+  /* background-color: rgb(63, 59, 59); */
+  min-width: 200px;
+  /* max-width: 300px; */
+  height: 150px;
+}
+
+
 /* ul.grid > #gli:nth-child(1){display: grid; grid-template-rows: 1fr; color: #000;} */
 /* ul.grid > #gli:nth-child(2){display: grid; grid-template-rows:  200px; color: #000;} */
 /* ul.grid > #gli:nth-child(1){display: grid; grid-template-rows: 200px; color: #000;} */
