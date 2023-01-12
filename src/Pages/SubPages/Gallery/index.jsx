@@ -1,4 +1,4 @@
-import { GalleryList } from "../../../Components/gallery-list";
+import { GalleryItems } from "../../../Components/gallery-items";
 import { galleryPosts } from "../../../data";
 import "./style.css";
 
@@ -29,7 +29,7 @@ export const Gallery = () => (
     </div>
 
     <div className="w-full md:max-w-5xl max-md:px-4"> 
-      <GalleryList values={galleryPosts}/>
+      <GalleryItems values={galleryPosts}/>
     </div>
   </section>
 )
