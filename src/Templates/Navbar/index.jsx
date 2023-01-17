@@ -1,3 +1,4 @@
+import { memo } from "react/cjs/react.development";
 import { NavLink } from "../../Components/NavLink";
 import "./style.css";
 
@@ -7,7 +8,7 @@ function toggleMenu() {
   nav.classList.toggle("active");
 }
 
-export const NavigationBar = ({LinksList}) => (
+export const NavigationBar = memo(({LinksList}) => (
   <nav id="nav" className="fixed w-full top-0 shadow-xl z-20">
     <div className="navbar justify-between max-w-3xl lg:max-w-6xl  m-auto flex p-3 ">
       <div className="logo mt-1 -ml-1">
@@ -28,5 +29,5 @@ export const NavigationBar = ({LinksList}) => (
       </div>
     </div>
   </nav>
-);
+));
 
