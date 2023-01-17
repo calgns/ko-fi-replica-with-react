@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { memo } from "react/cjs/react.development";
 import "./style.css";
 
+// POSSO FAZER UM IF AQUI PARA CAUSAR O FOCUS ATARVES DE CLASSE OU DESCOBRIR OUTRO MEIO...
 
-export const Secnav = () => {
+export const Secnav = memo(() => {
   return(
     <nav className="w-full sticky border-solid border-opacity-20 overflow-x-auto overflow-y-hidden z-10" id="nav-radios">
       <div className="flex mx-auto " id="div-radios">
@@ -26,4 +28,5 @@ export const Secnav = () => {
     </div>
   </nav>
 )}
+);
 
