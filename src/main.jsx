@@ -43,6 +43,7 @@ const SecObs = new IntersectionObserver((entries, observer)=>{
   })}, SecOpt);
 SecObs.observe(claus)
 
+// NÃO É NESCESSARIO, MAS COLOQUEI POR ESTAR INCOMODADO POR ALGO ESTAR ERRADO.
 if ("InstallTrigger" in window)
 {
   // Gecko platform, InstallTrigger available
