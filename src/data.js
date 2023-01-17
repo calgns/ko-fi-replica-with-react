@@ -35,12 +35,12 @@ export const galleryPosts = [
   {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://place-hold.it/50x50", k:"flo!90"},
   {title: "Loem boemia bohemian casparovi", cover: "https://place-hold.it/500x50", k:"h6!75"},
   {title: "Loem boemia bohemian casparovi senna", cover: "https://place-hold.it/300x600", k:"co!vir"},
-  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://place-hold.it/600x300", k:"flo0!96"},
-  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x300/255254203/6e05ff", k:"flo0!96"},
-  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x300/cyan/teal", k:"flo0!96"},
-  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x300/lime/green", k:"flo0!96"},
-  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x150?text=moi+plaqueti", k:"flo0!96"},
-  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x150/090809/f40000", k:"flo0!96"},
+  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://place-hold.it/600x300", k:"H26"},
+  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x300/255254203/6e05ff", k:"Nd96"},
+  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x300/cyan/teal", k:"flopo"},
+  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x300/lime/green", k:"FFAADD"},
+  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x150?text=moi+plaqueti", k:"#EA#@"},
+  {title: "Loem boemia bohemian casparovi senna cruicscrevielie varsalis", cover: "https://placehold.co/300x150/090809/f40000", k:"G$G@@E"},
 ];
 
 export const shopItems = [
