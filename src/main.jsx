@@ -8,20 +8,21 @@ import { AllPosts } from './Pages/SubPages/AllPosts';
 import { Gallery } from './Pages/SubPages/Gallery';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Shop } from './Pages/SubPages/Shop';
+import { Home } from './Pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path='*' element={<NotFound />}/>
+        <Route path='/' element={<Home />}/>
+
         <Route path='/Blog' element={<Blog />}>
           <Route path='About' element={<About/>} />
           <Route path='Gallery' element={<Gallery />} />
           <Route path='Posts' element={<AllPosts />} />
           <Route path='Shop' element={<Shop />} />
         </Route>
-        <Route path='*' element={<NotFound />}/>
-        {/* <Route path='/' element={<Home />}/> */}
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
