@@ -19,8 +19,13 @@ export const featuredPosts = [
 export const navBlog = [
   {link: "Explore", direction:"#", mob: ""},
   {link: "About", direction:"/Blog", mob: ""},
-  // {link: "Gold", direction:"#", mob: "extra"},
-  // {link: "Blog", direction:"/Blog", mob: "extra"},
+];
+
+export const navHome = [
+  {link: "Explore", direction:"#", mob: ""},
+  {link: "About", direction:"/Blog", mob: ""},
+  {link: "Gold", direction:"#", mob: "extra"},
+  {link: "Blog", direction:"/Blog/posts", mob: "extra"},
 ];
 
 export const galleryPosts = [
@@ -60,3 +65,4 @@ export const shopItems = [
   { type: "animals/grayscale",  price: "R$ 600 -", color: "bg-teal-600",  title: "Loemim diareia pancreas", details: "lobinho lobo lobinho ovelga ovelha", category: "animals"},
   { type: "tech/sepia",  price: "$1000", color: "bg-sky-500",  title: "fogo no babilonia pega fooogooo na bab i", details: "fogo na babilonia sct ig babilonus", category: "tech"},
 ]
+
