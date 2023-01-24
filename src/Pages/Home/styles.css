@@ -1,0 +1,65 @@
+.text-gradient{
+  background: -webkit-linear-gradient(93deg, #f72832 0%, #3e59d4 100%);
+  background-clip: border-box;
+  /* background-clip: text; */
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 640px) {
+  .text-custom-p{
+    font-size: 26px;
+  }
+}
+
+.claim{
+  min-width: 210px;
+  max-width: 472px;
+  background-color: #150e22;
+  box-shadow: rgb(40, 71, 115) 0px 1px 11px;
+}
+
+.header-h{
+  height: 700px;
+  max-width: 1600px;
+}
+
+.cartoon{
+  background: url("https://storage.ko-fi.com/cdn/landing_assets/kofi_heroimg.png") no-repeat;
+  position: absolute;
+  bottom: -35px;
+  width: 100%;
+  overflow-x: hidden;
+  height: 88%;
+  background-size: cover;
+
+  object-fit: cover;
+  background-position: center;
+  filter: saturate(2);
+  z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .cartoon{height: 60%;}
+}
+
+@media (min-width: 600px) {
+  .claim{
+    width: 472px;
+  }
+  
+}
+
+.no-break{
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+input#claim{
+  background-color: transparent;
+  width: 100%;
+  max-width: 270px;
+}
+
+.claim-btn{background-color: #4109d9;}
