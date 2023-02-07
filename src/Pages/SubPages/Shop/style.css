@@ -1,5 +1,19 @@
-.shop-active{border: 1px solid #930000; background-color: #3d0000;}
-.cat{
+
+.shop-btn{
+  background-color: #011a13;
+  border: 1px solid #0c3a2e;
+  color: #08b796;
+}
+
+.shop-btn-active{
+  /* border: 1px solid #930000; background-color: #3d0000; */
+  box-shadow: 0 1px 20px 1px #004d49;
+  background-color: #00322c;
+  border: 1px solid #008969;
+  color: cyan;
+}
+
+.category{
   min-width: 350px;
   width: fit-content;
 }
