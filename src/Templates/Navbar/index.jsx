@@ -13,6 +13,7 @@ function toggleMenu() {
 
 export const NavigationBar = memo( ({LinksList, buttonClass="default-btn", buttonText="Sign up" }) => {
   const currentUrl = window.location.pathname.toLowerCase()
+  const [pop, setPop] = useState("Sing")
   const [popUp, setPopUp] = useState(false)
   const [timedPopUp, setimedPopUp] = useState(false)
 
@@ -32,22 +33,20 @@ export const NavigationBar = memo( ({LinksList, buttonClass="default-btn", butto
           </Link>
         </div>
         <div className="flex items-center">
-          {( currentUrl === "/" ? <a href=""  onClick={()=>setPopUp(true)} className="log-in-mob font-bold mr-2 p-2 text-wheat sm:hidden hover:text-indigo-500">Log in</a> : "")}
-          <button className={"left-btn "+buttonClass} onClick={()=>setPopUp(true)}>{buttonText}</button>
+          {( currentUrl === "/" ? <a href="#"  onClick={()=>{setPopUp(true); setPop("log")}} className="log-in-mob font-bold mr-2 p-2 text-wheat sm:hidden hover:text-indigo-500">Log in</a> : "")}
+          <button className={"left-btn "+buttonClass} onClick={()=>{setPopUp(true); setPop("sing")}}>{buttonText}</button>
           <button className="btn-mobile text-4xl " onClick={toggleMenu}><span className="hamburger"></span></button>
 
           <ul className="menu flex font-bold items-center">
             {LinksList.map(a=>(<NavLink link={a.link} direction={a.direction} mob={a.mob} key={a.link + a.mob}/>))} 
-            <li className={"mx-4 text-base "} onClick={()=>setPopUp(true)}><a href="#">Log In</a></li>
+            <li className={"mx-4 text-base "} onClick={()=>{setPopUp(true); setPop("log")}}><a href="#">Log In</a></li>
           </ul>
-          <button onClick={()=>setPopUp(true)} className={buttonClass}>{buttonText}</button>
+          <button onClick={()=>{setPopUp(true); setPop("log")}} className={buttonClass}>{buttonText}</button>
         </div>
       </div>
     </nav>
     
-    <PopUp trigger={popUp} setTrigger={setPopUp}>
-      <SingUp />
-    </PopUp>
+    <PopUp trigger={popUp} setTrigger={setPopUp} pop={pop}/>
 
     {/* <PopUp trigger={timedPopUp} setTrigger={setimedPopUp}>
       <h3 className="font-bold text-xl">Meu pop up Temporal</h3>
