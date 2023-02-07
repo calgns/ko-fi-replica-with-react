@@ -1,0 +1,38 @@
+
+.inputs > div{
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  width: 100%;
+}
+
+.inputs > div label{
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.inputs > div input{
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  width: 100%;
+  padding-block: .5rem;
+  padding-left: .5rem;
+}
+
+.google-sing{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rosybrown;
+  padding-block: .5rem;
+  place-items: center;
+  justify-content: center;
+}
+
+.sing-up h3{
+  background: -webkit-linear-gradient(93deg, #ff000c 0%, #7004ff 100%);
+  background-clip: border-box;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
