@@ -1,0 +1,62 @@
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-image: linear-gradient(140deg, #1f0646c4, #1b1426);
+}
+
+.popup-inner{
+  /* background-image: linear-gradient(170deg, #e5dbf2b8 ,#3f3b46); */
+  background-color: #222;
+  position: relative;
+  top: 0;
+
+  margin-inline: auto;
+  margin-block: 50px;
+  padding: 2rem;
+
+  width: 100%;
+  max-width: 640px;
+  border-radius: .5rem;
+  border: 1px solid white;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .popup-inner{
+    padding-inline: 15px;
+  }
+}
+
+.popup-inner .close-btn{
+  position: absolute;
+  display: flex;
+  top: 1rem; 
+  right: 1rem;
+}
+
+.popup-inner .close-btn::before,
+.popup-inner .close-btn::after{
+  content: '';
+  background-color: #eee;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 1.4rem;
+  height: .3rem;
+  border-radius: 4px;
+}
+
+.popup-inner .close-btn::before{
+  rotate: 45deg;
+  translate: 50%;
+}
+
+.popup-inner .close-btn::after{
+  rotate: -45deg;
+  translate: -50%;
+}
