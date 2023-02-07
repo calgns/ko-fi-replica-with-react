@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { memo } from "react/cjs/react.development";
+import { memo } from "react";
 import "./style.css";
 
 // POSSO FAZER UM IF AQUI PARA CAUSAR O FOCUS ATARVES DE CLASSE OU DESCOBRIR OUTRO MEIO...

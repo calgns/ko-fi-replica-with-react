@@ -2,7 +2,7 @@ import { NavigationBar } from "../../Templates/Navbar";
 import { Secnav } from "../../Templates/Secnav";
 import { About } from "../SubPages/About";
 
-import { useEffect, useRef, useState } from "react/cjs/react.development";
+import { useEffect, useRef, useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import { navBlog } from "../../data";

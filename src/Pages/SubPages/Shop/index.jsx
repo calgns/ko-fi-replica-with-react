@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { memo, useCallback, useEffect, useMemo, useRef } from "react/cjs/react.development";
+import { memo, useCallback, useMemo } from "react";
 import { ShopMerch } from "../../../Components/shop-items";
 import { shopItems } from "../../../data";
 import "./style.css";

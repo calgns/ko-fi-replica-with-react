@@ -1,7 +1,7 @@
 import "./styles.css";
 import { navHome } from "../../data";
 import { NavigationBar } from "../../Templates/Navbar";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { PopUp } from "../../Templates/Pop-up";
 
 export const Home = () => {

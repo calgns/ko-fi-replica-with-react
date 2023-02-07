@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { memo, useEffect, useState } from "react/cjs/react.development";
+import { memo, useEffect, useState } from "react";
 import { NavLink } from "../../Components/NavLink";
-import { SingUp } from "../../Components/SingUp";
 import { PopUp } from "../Pop-up";
 import "./style.css";
 
