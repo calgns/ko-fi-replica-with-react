@@ -1,7 +1,0 @@
-
-.shop-card{min-width: 270px; max-width: 300px; max-height: 440px; flex: 1 1 280px;}
-
-.shop-img{max-width: 300px; min-height: 300px; }
-.shop-img > img{min-height: inherit;}
-.shop-detail{max-width: 300px; min-height: 150px;}
-.preview-text{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-wrap: break-word; width: inherit;}
