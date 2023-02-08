@@ -40,7 +40,7 @@ export const NavigationBar = memo( ({LinksList, buttonClass="default-btn", butto
             {LinksList.map(a=>(<NavLink link={a.link} direction={a.direction} mob={a.mob} key={a.link + a.mob}/>))} 
             <li className={"mx-4 text-base "} onClick={()=>{setPopUp(true); setPop("log")}}><a href="#">Log In</a></li>
           </ul>
-          <button onClick={()=>{setPopUp(true); setPop("log")}} className={buttonClass}>{buttonText}</button>
+          <button onClick={()=>{setPopUp(true); setPop("sing")}} className={buttonClass}>{buttonText}</button>
         </div>
       </div>
     </nav>
