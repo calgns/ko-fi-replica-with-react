@@ -18,14 +18,14 @@ export const featuredPosts = [
 
 export const navBlog = [
   {link: "Explore", direction:"#", mob: ""},
-  {link: "About",   direction:"/Blog", mob: ""},
+  {link: "About",   direction:"/blog", mob: ""},
 ];
 
 export const navHome = [
   {link: "Explore", direction:"#", mob: ""},
-  {link: "About",   direction:"/Blog", mob: ""},
+  {link: "About",   direction:"/blog", mob: ""},
   {link: "Gold",    direction:"#", mob: "extra"},
-  {link: "Blog",    direction:"/Blog/posts", mob: "extra"},
+  {link: "Blog",    direction:"/blog/posts", mob: "extra"},
 ];
 
 export const galleryPosts = [

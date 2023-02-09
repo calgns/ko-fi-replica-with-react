@@ -1,8 +1,8 @@
 import { NavigationBar } from "../../Templates/Navbar";
 import { Secnav } from "../../Templates/Secnav";
-import { About } from "../SubPages/About";
 
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
 import { navBlog } from "../../data";
@@ -14,8 +14,12 @@ export const Blog = () => {
   const numberRef = useRef(0);
   const [count, setCount] = useState(0);
   const currentUrl = window.location.pathname.toLowerCase()
+  const navigate = useNavigate()
   
-  useEffect(()=>{numberRef.current = Math.round(Math.random()*100)})
+  useEffect(()=>{
+    numberRef.current = Math.round(Math.random()*100);
+    if(currentUrl === "/blog") navigate("about")
+  })
 
   return (
   <>
@@ -61,10 +65,9 @@ export const Blog = () => {
       </main>
     </header>
 
-    {/* SECOND NAV / INFERION NAVBAR */}
     <Secnav />
 
-    {(currentUrl === "/blog" ? <About /> : <Outlet />)}
+    <Outlet/>
 
     {/* <span>PROCURE SOBRE ROUTER E CONTINUE AULA 58.</span> */}
   </>)

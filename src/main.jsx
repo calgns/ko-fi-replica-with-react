@@ -17,11 +17,11 @@ ReactDOM.render(
         <Route path='*' element={<NotFound />}/>
         <Route path='/' element={<Home />}/>
 
-        <Route path='/Blog' element={<Blog />}>
-          <Route path='About' element={<About/>} />
-          <Route path='Gallery' element={<Gallery />} />
-          <Route path='Posts' element={<AllPosts />} />
-          <Route path='Shop' element={<Shop />} />
+        <Route path='/blog' element={<Blog />}>
+          <Route path='about' element={<About/>} />
+          <Route path='gallery' element={<Gallery />} />
+          <Route path='posts' element={<AllPosts />} />
+          <Route path='shop' element={<Shop />} />
         </Route>
       </Routes>
     </BrowserRouter>

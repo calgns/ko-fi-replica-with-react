@@ -17,7 +17,7 @@ export const NavigationBar = memo( ({LinksList, buttonClass="default-btn", butto
   const [timedPopUp, setimedPopUp] = useState(false)
 
   useEffect(()=>{
-    setTimeout(()=>{setimedPopUp(true)}, 3000)
+    // setTimeout(()=>{setimedPopUp(true)}, 3000)
   }, [])
 
   return (
@@ -25,7 +25,7 @@ export const NavigationBar = memo( ({LinksList, buttonClass="default-btn", butto
     <nav id="nav" className="fixed w-full top-0 shadow-xl z-20">
       <div className="navbar justify-between max-w-3xl lg:max-w-6xl  m-auto flex p-3 ">
         <div className="logo mt-1 -ml-1">
-          <Link to="/">
+          <Link to={currentUrl === "/" ? "./blog" : "/"}>
             {(currentUrl === "/"
               ? <img src="https://storage.ko-fi.com/cdn/Kofi_Logo_Blue.svg" className="w-24" alt="" /> 
               : <img src="https://storage.ko-fi.com/cdn/brandasset/logo_white_stroke_small.png" className="w-24" alt="" /> )}

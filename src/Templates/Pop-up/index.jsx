@@ -9,10 +9,9 @@ export const PopUp = (props) => {
   useEffect(()=>{
     var innerPop = document.querySelector("div.popup-inner");
     let handler = (event) => {
-      // if(outterPop.contains(event.target)){
-        if(!innerPop.contains(event.target)) {props.setTrigger(false); console.log(event, "trigger...", event.target)}
-        console.log(!innerPop.contains(event.target));
-      // }
+      if(!innerPop.contains(event.target)) {props.setTrigger(false);}
+      // console.log(event, "trigger...", event.target)}
+      // console.log(!innerPop.contains(event.target));
     }
 
     document.addEventListener("mousedown", handler)

@@ -24,19 +24,19 @@ export const Secnav = memo(() => {
       <div className="flex mx-auto " id="div-radios">
         <ul className="flex font-bold text-md" id="ul">
           <li className="px-3">
-            <NavLink to="About" style={isActive} > About </NavLink>
+            <NavLink to="about" style={isActive} > About </NavLink>
           </li>
 
           <li className="px-3">
-            <NavLink to="Gallery" style={isActive} > Gallery </NavLink>
+            <NavLink to="gallery" style={isActive} > Gallery </NavLink>
           </li>
 
           <li className="px-3">
-            <NavLink to="Posts" style={isActive} > Posts </NavLink>
+            <NavLink to="posts" style={isActive} > Posts </NavLink>
           </li>
 
           <li className="px-3">
-            <NavLink to="Shop" style={isActive} > Shop </NavLink>
+            <NavLink to="shop" style={isActive} > Shop </NavLink>
           </li>
       </ul>
     </div>
