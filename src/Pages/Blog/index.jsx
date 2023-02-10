@@ -37,7 +37,7 @@ export const Blog = () => {
             <div className="user-img ">
               <img
                 src="https://storage.ko-fi.com/cdn/useruploads/efb123e7-f6d4-476c-9045-0428bd0d0677.png"
-                className="rounded-full border-zinc-900 border-4 border-solid"
+                className="rounded-full"
                 alt=""
               />
             </div>

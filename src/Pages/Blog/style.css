@@ -29,6 +29,7 @@ img{max-width: 100%;}
 .claus-main {max-width: 954px; margin-inline: auto;}
 
 .user-img{width: 120px;}
+.user-img img{border: 4px #f5e9ff solid; filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;}
 .donate{
   background-color: #00322c;
   border: 1px solid #079b9b;
