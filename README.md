@@ -11,7 +11,7 @@ Assim como no meu <a href="https://react-miranda.netlify.app/"> *projeto anterio
 
 ## Resultado
 
-* <a href="https://ko-fi-reactjs.netlify.app/">Projeto Atual</a>
+* <a href="https://ko-fi-reactjs.netlify.app/" target="_blank" >Projeto Atual</a>
 
 
 ## - Utilizado
